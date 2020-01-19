@@ -4,7 +4,6 @@
         "S3Bucket": {
             "Type": "AWS::S3::Bucket"
         },
-        {
     "AlertSNSTopic" : {
         "Type" : "AWS::SNS::Topic",
         "Properties" : {
@@ -14,7 +13,6 @@
           }]
         }
       }
-  }
     },
     "Outputs": {
         "BucketName": {
