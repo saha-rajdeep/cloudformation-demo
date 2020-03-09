@@ -1,0 +1,21 @@
+{
+  "Statement" : [
+  {
+    "Effect" : "Deny",
+    "Principal" : "*",
+    "Action" : "Update:*",
+    "Resource" : "*",
+    "Condition" : {
+      "StringEquals" : {
+        "ResourceType" : ["AWS::EC2::Instance", "AWS::RDS::DBInstance"]
+      }
+    }
+  },
+  {
+    "Effect" : "Allow",
+    "Principal" : "*",
+    "Action" : "Update:*",
+    "Resource" : "*"
+  }
+  ]
+}

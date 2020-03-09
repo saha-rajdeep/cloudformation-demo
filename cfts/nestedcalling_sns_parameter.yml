@@ -1,0 +1,17 @@
+AWSTemplateFormatVersion: 2010-09-09
+Parameters:
+  Emailaddress:
+    Type: String
+    Description: 'Enter email for SNS notification'
+Resources:
+  NestedCall:
+    Type: AWS::CloudFormation::Stack
+    Properties: 
+      Parameters:
+        SNSEmail: !Ref Emailaddress
+      TemplateURL: https://udemycdkbucket.s3-us-west-2.amazonaws.com/sns_parameter_example.json
+      TimeoutInMinutes: 60
+Outputs:
+  StackRef:
+    Value: !Ref NestedCall
+  
