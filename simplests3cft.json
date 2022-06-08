@@ -1,14 +1,14 @@
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
-        "tcs-sales-bucket9": {
+        "tcsautobucket9": {
             "Type": "AWS::S3::Bucket"
         }
     },
     "Outputs": {
         "BucketName": {
             "Value": {
-                "Ref": "tcs-sales-bucket9"
+                "Ref": "tcsautobucket9"
             },
             "Description": "Name of the sample Amazon S3 bucket."
         }
