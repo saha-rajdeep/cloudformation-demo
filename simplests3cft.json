@@ -1,7 +1,7 @@
 {
     "AWSTemplateFormatVersion": "2010-09-09",
     "Resources": {
-        "S3Bucket": {
+        "tcs-sales-bucket9": {
             "Type": "AWS::S3::Bucket"
         }
     },
